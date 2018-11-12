@@ -8,7 +8,142 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
 .navbar-laravel {
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.navbar-index {
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  background-color: snow;
+  z-index: 100;
+  .navbar-index__brand {
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding: 10px;
+    color: hotpink;
+  }
+  .navbar-index__right-menu {
+    
+  }
+}
+
+.navbar-index__list-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  li {
+    float: left;
+    a {
+      display: inline-block;
+      padding: 20px 20px;
+      color: grey;
+    }
+  }
+}
+
+.erdles-head {
+  padding: 20px 0 100px;
+}
+
+.erdles-head__content {
+
+}
+
+.erdles-head__content--text {
+  h1 {
+    margin-top: 50px;
+    color: hotpink;
+    font-weight: 600;
+  }
+}
+
+.erdles-penjelasan__left {
+  text-align: center;
+  padding: 80px 0 60px;
+  h1 {
+    margin: 0;
+    font-weight: 600
+  }
+  p {
+    font-size: 1.3rem;
+  }
+}
+
+.erdles-penjelasan__right {
+  padding: 60px 60px;
+  p {
+    margin: 0;
+    font-size: 1.3rem;
+  }
+}
+
+.feature {
+  .feature__header-text {
+    padding: 80px 0;
+    color: #ff69b4;
+    text-align: center;
+    h2 {
+      font-weight: 600;
+    }
+    p {
+      color: grey;
+      font-size: 1.3rem
+    }
+  }
+}
+
+.about-us {
+  background-color: hotpink;
+  color: white;
+  .about-us__text {
+    padding: 50px 0;
+    h1 {
+      display: inline-block;
+      padding-bottom: 10px;
+      border-bottom: 5px solid white;
+      font-weight: 600;
+    }
+    h2 {
+      font-size: 2rem;
+    }
+    .kelompok {
+      font-size: 3rem;
+    }
+  }
+}
+
+.about-us__card-ct {
+  h1 {
+    color: hotpink;
+    display: inline-block;
+    padding-bottom: 10px;
+    border-bottom: 5px solid hotpink;
+    font-weight: 600;
+  }
+}
+
+.btn-pink {
+  background-color: hotpink;
+  color: white;
+}
+
+.penutup {
+  padding: 10px;
+  background-color: snow;
+  color: hotpink;
+  p {
+    margin: 0;
+  }
 }
