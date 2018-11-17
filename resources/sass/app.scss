@@ -109,23 +109,23 @@ body {
   color: white;
   .about-us__text {
     padding: 50px 0;
-    h1 {
+    h2 {
       display: inline-block;
       padding-bottom: 10px;
       border-bottom: 5px solid white;
       font-weight: 600;
     }
-    h2 {
+    h3 {
       font-size: 2rem;
     }
     .kelompok {
-      font-size: 3rem;
+        font-size: 2rem;
     }
   }
 }
 
 .about-us__card-ct {
-  h1 {
+  h2 {
     color: hotpink;
     display: inline-block;
     padding-bottom: 10px;

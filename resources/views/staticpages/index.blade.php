@@ -22,8 +22,8 @@
             </div>
             <div class="navbar-index__left-menu">
                 <ul class="navbar-index__list-menu">
-                    <li><a href="">Registrasi</a></li>
-                    <li><a href="">Masuk Akun</a></li>
+                    <li><a href="{{route('register')}}">Registrasi</a></li>
+                    <li><a href="{{route('login')}}">Masuk Akun</a></li>
                 </ul>
             </div>
         </div>
@@ -138,9 +138,9 @@
             <div class="about-us mb-5">
                 <div class="container">
                     <div class="about-us__text">
-                        <h1>Tentang kami</h1>
+                        <h2>Tentang kami</h2>
                         <br><br>
-                        <h2>Di desain dan dibuat dengan cinta oleh:</h2>
+                        <h3>Di desain dan dibuat dengan cinta oleh:</h3>
                         <br>
                         <h3 class="kelompok">Kelompok 5</h3>
                     </div>
@@ -148,40 +148,40 @@
             </div>
             <div class="about-us__card-ct">
                 <div class="container">
-                    <h1>Anggota Kelompok</h1>
+                    <h2>Anggota Kelompok</h2>
                     <div class="row mt-5">
-                        <div class="col-md-3">
+                        <div class="col-md-6 mt-3">
                             <div class="card">
                                 <div class="card-body">
-                                    <h2 class="card-title">Yusril</h2>
+                                    <h3 class="card-title">Yusril</h3>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-6 mt-3">
                             <div class="card">
                                 <div class="card-body">
-                                    <h2 class="card-title">Arif</h2>
+                                    <h3 class="card-title">Arif</h3>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-6 mt-3">
                             <div class="card">
                                 <div class="card-body">
-                                    <h2 class="card-title">Riva</h2>
+                                    <h3 class="card-title">Riva</h3>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-6 mt-3">
                             <div class="card">
                                 <div class="card-body">
-                                    <h2 class="card-title">Halim</h2>
+                                    <h3 class="card-title">Halim</h3>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3 mt-3">
+                        <div class="col-md-6 mt-3">
                             <div class="card">
                                 <div class="card-body">
-                                    <h2 class="card-title">Diaz</h2>
+                                    <h3 class="card-title">Diaz</h3>
                                 </div>
                             </div>
                         </div>

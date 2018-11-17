@@ -10574,22 +10574,22 @@ body {
   padding: 50px 0;
 }
 
-.about-us .about-us__text h1 {
+.about-us .about-us__text h2 {
   display: inline-block;
   padding-bottom: 10px;
   border-bottom: 5px solid white;
   font-weight: 600;
 }
 
-.about-us .about-us__text h2 {
+.about-us .about-us__text h3 {
   font-size: 2rem;
 }
 
 .about-us .about-us__text .kelompok {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
-.about-us__card-ct h1 {
+.about-us__card-ct h2 {
   color: hotpink;
   display: inline-block;
   padding-bottom: 10px;
