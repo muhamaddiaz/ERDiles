@@ -22,7 +22,7 @@
 <body>
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
-            <div class="container">
+            <div class="container-fluid">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     ERDLes
                 </a>
@@ -35,7 +35,13 @@
                     <ul class="navbar-nav mr-auto">
                         @auth
                             <li class="nav-item">
+                                <a class="nav-link" href="{{ route('login') }}">Beranda</a>
+                            </li>
+                            <li class="nav-item">
                                 <a class="nav-link" href="{{ route('login') }}">Materi</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('login') }}">Forum</a>
                             </li>
                         @endauth
                     </ul>
