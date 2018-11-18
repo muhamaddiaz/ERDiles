@@ -22,7 +22,7 @@
 <body>
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
-            <div class="container-fluid">
+            <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     ERDLes
                 </a>
@@ -35,13 +35,13 @@
                     <ul class="navbar-nav mr-auto">
                         @auth
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">Beranda</a>
+                                <a class="nav-link" href="{{ route('home') }}">Beranda</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">Materi</a>
+                                <a class="nav-link" href="{{ route('materi.index') }}">Materi</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">Forum</a>
+                                <a class="nav-link" href="{{ route('forum.index') }}">Forum</a>
                             </li>
                         @endauth
                     </ul>
@@ -82,7 +82,7 @@
             </div>
         </nav>
 
-        <main class="py-4">
+        <main>
             @yield('content')
         </main>
     </div>

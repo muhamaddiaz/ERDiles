@@ -53,14 +53,14 @@
         </div>
         <div class="erdles-penjelasan">
             <div class="row">
-                <div class="col-md-6" style="background-color: hotpink; color: white">
+                <div class="col-md-6 erdles-what">
                     <div class="container">
                         <div class="erdles-penjelasan__left">
                             <h1>Apa itu ERDLes ?</h1>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6" style="background-color: snow; color: hotpink">
+                <div class="col-md-6 erdles-what-text">
                     <div class="container">
                         <div class="erdles-penjelasan__right">
                             <p>
@@ -149,36 +149,39 @@
             <div class="about-us__card-ct">
                 <div class="container">
                     <h2>Anggota Kelompok</h2>
-                    <div class="row mt-5">
-                        <div class="col-md-6 mt-3">
+                    <div class="row mt-5 text-center">
+                        <div class="col-md-4 mt-3">
                             <div class="card">
                                 <div class="card-body">
                                     <h3 class="card-title">Yusril</h3>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 mt-3">
+                        <div class="col-md-4 mt-3">
                             <div class="card">
                                 <div class="card-body">
                                     <h3 class="card-title">Arif</h3>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 mt-3">
+                        <div class="col-md-4 mt-3">
                             <div class="card">
                                 <div class="card-body">
                                     <h3 class="card-title">Riva</h3>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 mt-3">
+                    </div>
+                    <div class="row mt-3 text-center">
+                        <div class="col-md-2"></div>
+                        <div class="col-md-4 mt-3">
                             <div class="card">
                                 <div class="card-body">
                                     <h3 class="card-title">Halim</h3>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 mt-3">
+                        <div class="col-md-4 mt-3">
                             <div class="card">
                                 <div class="card-body">
                                     <h3 class="card-title">Diaz</h3>

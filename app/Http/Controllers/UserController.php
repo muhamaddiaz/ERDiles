@@ -2,10 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Materi;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Http\Request;
 
-class MateriController extends Controller
+class UserController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,13 +15,7 @@ class MateriController extends Controller
      */
     public function index()
     {
-        // Menampilkan seluruh isi materi
-
-        $materi = Materi::all();
-
-        return view('materi.index', [
-            'materi' => $materi
-        ]);
+        //
     }
 
     /**
@@ -75,7 +70,20 @@ class MateriController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        // Fungsi ini digunakan untuk memperbarui profil
+
+        $user = Auth::user();
+        $user->name = $request->name;
+        $user->email = $request->email;
+        if($request->oldpassword) {
+            if(Hash::check($request->oldpassword, $user->password)) {
+                $user->password = Hash::make($request->password);
+            } else {
+                return back()->with('danger', 'Perbarui profil gagal!, kata sandi salah!');
+            }
+        }
+        $user->save();
+        return back()->with('success', 'Perbarui profil berhasil!');
     }
 
     /**
