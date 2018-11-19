@@ -7,6 +7,22 @@ use Illuminate\Http\Request;
 
 class MateriController extends Controller
 {
+    public function materi1() {
+        return view('materi.materi1');
+    }
+
+    public function materi2() {
+        return view('materi.materi2');
+    }
+
+    public function materi3() {
+        return view('materi.materi3');
+    }
+
+    public function materi4() {
+        return view('materi.materi4');
+    }
+
     /**
      * Display a listing of the resource.
      *

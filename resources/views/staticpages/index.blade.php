@@ -1,17 +1,8 @@
-<!DOCTYPE html>
-<html lang="id">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>ERDLes belajar ERD</title>
+@extends('layouts.app')
 
-        <script src="{{ asset('js/app.js') }}" defer></script>
-        <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+@section('content')
 
-    </head>
-    <body>
-        <div class="navbar-index container-fluid">
+        {{-- <div class="navbar-index container-fluid">
             <div class="navbar-index__right-menu">
                 <ul class="navbar-index__list-menu">
                     <li class="navbar-index__brand">ERDLes</li>
@@ -26,7 +17,7 @@
                     <li><a href="{{route('login')}}">Masuk Akun</a></li>
                 </ul>
             </div>
-        </div>
+        </div> --}}
         <div class="erdles-head">
             <div class="container">
                 <div class="erdles-head__content">
@@ -91,7 +82,7 @@
                     </div>
                     <div class="feature__card-group">
                         <div class="row">
-                            <div class="col-md-4">
+                            <div class="col-md-4 mt-4">
                                 <h3 class="text-center">Langkah 1</h3>
                                 <br>
                                 <div class="card">
@@ -105,7 +96,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 mt-4">
                                 <h3 class="text-center">Langkah 2</h3>
                                 <br>
                                 <div class="card">
@@ -118,7 +109,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 mt-4">
                                 <h3 class="text-center">Langkah 3</h3>
                                 <br>
                                 <div class="card">
@@ -136,7 +127,7 @@
                 </div>
             </div>
             <div class="about-us mb-5">
-                <div class="container">
+                <div class="container mt-5 mb-5">
                     <div class="about-us__text">
                         <h2>Tentang kami</h2>
                         <br><br>
@@ -153,21 +144,27 @@
                         <div class="col-md-4 mt-3">
                             <div class="card">
                                 <div class="card-body">
-                                    <h3 class="card-title">Yusril</h3>
+                                    <img src="{{asset('svg/girl.svg')}}" alt="arif image" style="width: 150px; height: 150px; border-radius: 50%">
+                                    <h3 class="card-title mt-4">Yusril</h3>
+                                    <p class="card-text">1301160183</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-4 mt-3">
                             <div class="card">
                                 <div class="card-body">
-                                    <h3 class="card-title">Arif</h3>
+                                    <img src="{{asset('image/arif.jpg')}}" alt="arif image" style="width: 150px; height: 150px; border-radius: 50%">
+                                    <h3 class="card-title mt-4">Arif</h3>
+                                    <p class="card-text">1301164023</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-4 mt-3">
                             <div class="card">
                                 <div class="card-body">
-                                    <h3 class="card-title">Riva</h3>
+                                    <img src="{{asset('image/riva.jpeg')}}" alt="arif image" style="width: 150px; height: 150px; border-radius: 50%">
+                                    <h3 class="card-title mt-4">Riva</h3>
+                                    <p class="card-text">1301164368</p>
                                 </div>
                             </div>
                         </div>
@@ -177,14 +174,18 @@
                         <div class="col-md-4 mt-3">
                             <div class="card">
                                 <div class="card-body">
-                                    <h3 class="card-title">Halim</h3>
+                                    <img src="{{asset('image/halim.jpg')}}" alt="arif image" style="width: 150px; height: 150px; border-radius: 50%">
+                                    <h3 class="card-title mt-4">Halim</h3>
+                                    <p class="card-text">1301164207</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-4 mt-3">
                             <div class="card">
                                 <div class="card-body">
-                                    <h3 class="card-title">Diaz</h3>
+                                    <img src="{{asset('image/diaz.jpeg')}}" alt="arif image" style="width: 150px; height: 150px; border-radius: 50%">
+                                    <h3 class="card-title mt-4">Diaz</h3>
+                                    <p class="card-text">1301164135</p>
                                 </div>
                             </div>
                         </div>
@@ -195,5 +196,5 @@
         <footer class="penutup mt-5">
             <p>Kelompok 5 IMK &copy; 2018</p>
         </footer>
-    </body>
-</html>
+
+@endsection
