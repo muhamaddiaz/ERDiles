@@ -121,6 +121,8 @@
                     </div>
                     <div class="col-md-4 mt-3">
                         <h3>Video</h3>
+                        <br>
+                        <iframe style="width: auto; height: auto" src="https://www.youtube.com/embed/OXvhfq1V84c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
                 <div class="display: flex; justify-content: space-between; width: 100%">
