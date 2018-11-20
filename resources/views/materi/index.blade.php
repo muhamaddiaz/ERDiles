@@ -5,11 +5,16 @@
 @section('content')
     <div class="jumbotron home-quotes mt-5">
         <div class="container">
-            <h1>Materi</h1>
+            <h1><i class="fas fa-book"></i> Materi</h1>
             <p>Materi pembelajaran ERDLes</p>
         </div>
     </div>
     <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item active" aria-current="page"></i><i class="fas fa-book"></i>  Materi</li>
+            </ol>
+        </nav>
         <div class="row">
             <div class="col-md-6 mt-3">
                 <div class="card">

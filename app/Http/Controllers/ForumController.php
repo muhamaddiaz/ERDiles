@@ -25,7 +25,7 @@ class ForumController extends Controller
     {
         // Menampilkan seluruh forum diskusi
 
-        $forum = Forum::all();
+        $forum = Forum::orderBy('created_at', 'desc')->get();
 
         return view('forum.index', [
             'forum' => $forum

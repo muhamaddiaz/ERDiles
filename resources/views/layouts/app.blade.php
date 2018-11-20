@@ -15,6 +15,7 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -24,7 +25,7 @@
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary navbar-laravel">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    ERDLes
+                    <i class="fab fa-bandcamp"></i> ERDLes
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -35,13 +36,13 @@
                     <ul class="navbar-nav mr-auto">
                         @auth
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('home') }}">Beranda</a>
+                                <a class="nav-link" href="{{ route('home') }}"><i class="fas fa-home"></i> Beranda</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('materi.index') }}">Materi</a>
+                                <a class="nav-link" href="{{ route('materi.index') }}"><i class="fas fa-book"></i> Materi</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('forum.index') }}">Forum</a>
+                                <a class="nav-link" href="{{ route('forum.index') }}"><i class="fas fa-users"></i> Forum</a>
                             </li>
                         @endauth
                     </ul>
@@ -51,17 +52,18 @@
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">
-                                <a class="nav-link" style="color: white" href="{{ route('login') }}">{{ __('Masuk') }}</a>
+                                <a class="nav-link" style="color: white" href="{{ route('login') }}"><i class="fas fa-sign-in-alt"></i> {{ __('Masuk') }}</a>
                             </li>
                             <li class="nav-item">
                                 @if (Route::has('register'))
-                                    <a class="nav-link" style="color: white"href="{{ route('register') }}">{{ __('Registrasi') }}</a>
+                                    <a class="nav-link" style="color: white"href="{{ route('register') }}"><i class="fas fa-user"></i> {{ __('Registrasi') }}</a>
                                 @endif
                             </li>
                         @else
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }} <span class="caret"></span>
+                                        <img src="http://gravatar.com/avatar/{{md5(Auth::user()->email)}}" alt="profile image" 
+                                        style="width: 20px; height: 20px; border-radius: 50%"> {{ Auth::user()->name }} <span class="caret"></span>
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
@@ -84,9 +86,11 @@
 
         <main>
             @yield('content')
+            @auth
             <button title="Tombol bantuan" data-target="#bantuan" data-toggle="modal" class="btn btn-primary" style="position: fixed; right: 30px; bottom: 30px; width: 50px; height: 50px; border-radius: 50%; padding: 0;">
                 <b>?</b>
             </button>
+            @endauth
 
             <div id="bantuan" class="modal fade" role="dialog">
                 <div class="modal-dialog">

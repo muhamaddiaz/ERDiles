@@ -11,6 +11,18 @@
     </div>
 
     <div class="container">
+        @if(session('success'))
+            <div class="alert alert-success alert-dismissable fade show">
+                <a href="" class="close" data-dismiss="alert">&times;</a>
+                {{session('success')}}
+            </div>
+        @endif
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item" aria-current="page"></i><a href="{{route('forum.index')}}"><i class="fas fa-users"></i> Forum</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Lihat forum</li>
+            </ol>
+        </nav>
         <div class="row">
             <div class="col-md-8">
                 <div class="card">

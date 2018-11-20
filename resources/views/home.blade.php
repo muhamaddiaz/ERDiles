@@ -8,6 +8,12 @@
         </div>
     </div>
     <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item active" aria-current="page"><i class="fas fa-home"></i> Beranda</li>
+            </ol>
+        </nav>
+        <br>    
         <div class="row">
             <div class="col-md-4">
                 <div class="card">
@@ -87,7 +93,7 @@
                         <div class="form-group">
                             <input type="password" name="password" class="form-control" placeholder="Kata sandi baru">
                         </div>
-                        <button type="submit" class="btn btn-primary">Perbarui informasi</button>
+                        <button type="submit" class="btn btn-primary"><i class="far fa-edit"></i> Perbarui informasi</button>
                     </form>
                 </div>
                 <div class="modal-footer">

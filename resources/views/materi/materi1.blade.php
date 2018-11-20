@@ -10,6 +10,12 @@
         </div>
     </div>
     <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item" aria-current="page"><a href="{{route('materi.index')}}"><i class="fas fa-book"></i> Materi</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Materi 1</li>
+            </ol>
+        </nav>
         <div class="card">
             <div class="card-body">
                 <div class="row mb-4" style="text-align:justify">

@@ -21,7 +21,7 @@
         <div class="erdles-head" style="background-image: url({{asset('image/work.jpg')}}); background-size: 100% 100%">
             <div class="erdles-head__content">
                 <div class="erdles-head__content--text">
-                    <h1>ERDLes.</h1>
+                    <h1><i class="fab fa-bandcamp"></i>  ERDLes.</h1>
                     <h3>Belajar <i>Entity Relational Diagram</i> dengan mudah bersama ERDles web.</h3>
                     <br>
                     <button class="btn btn-outline-light btn-lg">Pelajari lebih lanjut</button>
@@ -73,7 +73,10 @@
                                 <br>
                                 <div class="card">
                                     <div class="card-body">
-                                        <h3 class="card-title">Materi</h3>
+                                        <div class="text-center">
+                                            <i class="fas fa-book" style="font-size: 6rem"></i>
+                                        </div>
+                                        <h3 class="card-title mt-3">Materi</h3>
                                         <p class="card-text">
                                             Kami sediakan materi yang mudah dimengerti untuk dipelajari oleh
                                             pengguna web ini, dengan tujuan untuk membantu setiap pengguna 
@@ -87,7 +90,10 @@
                                 <br>
                                 <div class="card">
                                     <div class="card-body">
-                                        <h3 class="card-title">Video</h3>
+                                        <div class="text-center">
+                                            <i class="fas fa-video" style="font-size: 6rem"></i>
+                                        </div>
+                                        <h3 class="card-title mt-3">Video</h3>
                                         <p class="card-text">
                                             Kami sediakan materi berbentuk video tutorial jika pengguna merasa
                                             kesulitan dengan membaca materi pengguna bisa menggunakan opsi ini
@@ -100,7 +106,10 @@
                                 <br>
                                 <div class="card">
                                     <div class="card-body">
-                                        <h3 class="card-title">Forum</h3>
+                                        <div class="text-center">
+                                            <i class="fas fa-users" style="font-size: 6rem"></i>
+                                        </div>
+                                        <h3 class="card-title mt-3">Forum</h3>
                                         <p class="card-text">
                                             Jika pengguna merasa kesulitan kembali, jangan khawatir pengguna bisa
                                             manfaatkan fitur ini dengan bertanya di forum yang sudah kami sediakan
