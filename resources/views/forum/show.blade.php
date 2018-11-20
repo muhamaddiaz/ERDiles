@@ -34,8 +34,8 @@
                 <br>
                 <div class="card mb-4">
                     <div class="card-body text-center">
-                        <img src="{{asset('svg/boy.svg')}}" alt="profile image" 
-                        style="width: 100px; height: 100px" class="mb-3">
+                        <img src="http://gravatar.com/avatar/{{md5($user->email)}}" alt="profile image" 
+                        style="width: 100px; height: 100px; border-radius: 50%" class="mb-3">
                         <h3 class="card-title">{{$user->name}}</h3>
                         <p class="card-text">{{$user->email}}</p>
                     </div>

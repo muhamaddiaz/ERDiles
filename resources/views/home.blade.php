@@ -12,8 +12,8 @@
             <div class="col-md-4">
                 <div class="card">
                     <div class="card-body text-center">
-                        <img src="{{asset('svg/boy.svg')}}" alt="profile image" 
-                        style="width: 100px; height: 100px" class="mb-3">
+                        <img src="http://gravatar.com/avatar/{{md5(Auth::user()->email)}}" alt="profile image" 
+                        style="width: 100px; height: 100px; border-radius: 50%" class="mb-3">
                         <h2>{{Auth::user()->name}}</h2>
                         <p>{{Auth::user()->email}}</p>
                     </div>
