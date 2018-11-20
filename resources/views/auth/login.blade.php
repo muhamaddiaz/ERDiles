@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row justify-content-center mt-5">
         <div class="col-md-5">
-            <h1 class="mb-3 mt-5" style="color: hotpink">ERDLes</h1>
+            <h1 class="mb-3 mt-5" style="color: #845ef7">ERDLes</h1>
             <div class="card">
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}">

@@ -18,7 +18,7 @@
                         <p>{{Auth::user()->email}}</p>
                     </div>
                 </div>
-                <div class="list-group mt-3">
+                <div class="list-group mt-3 mb-3">
                     <a href="#perbaruiProfil" data-toggle="modal" class="list-group-item list-group-action">
                         Perbarui profil
                     </a>
@@ -49,6 +49,7 @@
                 @endif
             </div>
         </div>
+        <br><br>
     </div>
 
     <div id="perbaruiProfil" class="modal fade" role="dialog">

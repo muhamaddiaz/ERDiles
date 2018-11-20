@@ -13,7 +13,9 @@
         <div class="row">
             <div class="col-md-8">
                 @if(!$forum->first())
+                    <br><br>
                     <h2 style="color: grey">Belum ada forum</h2>
+                    <br><br>
                 @else
                     @foreach($forum as $f)
                         <div class="card">
@@ -29,7 +31,7 @@
                     @endforeach
                 @endif
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 mt-3">
                 <div class="card">
                     <div class="card-body">
                         <h3 class="card-title primary-color">Buat forum</h3>
@@ -45,6 +47,7 @@
                 </div>
             </div>
         </div>
+        <br><br>
     </div>
 
     <div id="buatForum" class="modal fade" role="dialog">

@@ -31,17 +31,17 @@
                         <div class="text-center m-3">
                             <img src="{{asset('image/agregasi1.png')}}" style="width: 100%" alt="Binary image">
                         </div>   
-                        <div class="display: flex; justify-content: space-between; width: 100%">
-                            <a href="{{route('materi.bagian3')}}" class="btn btn-outline-primary">Sebelumnya</a>
-                            <a href="#" class="btn btn-outline-primary" disabled>Selanjutnya</a>
-                        </div>
                     </div>
                     
-                    <div class="col-md-4">
+                    <div class="col-md-4 mt-3">
                         <h3>Video</h3>
                     </div>
                 </div>
+                <div style="display: flex; justify-content: space-between; width: 100%">
+                    <a href="{{route('materi.bagian3')}}" class="btn btn-outline-primary">Sebelumnya</a>
+                </div>
             </div>
         </div>
+        <br><br>
     </div>
 @endsection

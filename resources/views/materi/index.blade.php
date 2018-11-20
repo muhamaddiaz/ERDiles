@@ -11,7 +11,7 @@
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 mt-3">
                 <div class="card">
                     <div class="card-body">
                         <div class="row">
@@ -28,7 +28,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 mt-3">
                 <div class="card">
                     <div class="card-body">
                         <div class="row">
@@ -82,5 +82,6 @@
                 </div>
             </div>
         </div>
+        <br><br>
     </div>
 @endsection

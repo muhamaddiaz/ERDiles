@@ -30,7 +30,7 @@
                 </div>
             </div>
             <div class="col-md-4">
-                <h3>Pembuat forum: </h3>
+                <h3 class="mt-4">Pembuat forum:</h3>
                 <br>
                 <div class="card mb-4">
                     <div class="card-body text-center">
@@ -50,6 +50,7 @@
                 @endif
             </div>
         </div>
+        <br><br>
     </div>
 
     <div id="editForum" class="modal fade" role="dialog">

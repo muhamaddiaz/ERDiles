@@ -18,7 +18,7 @@
                 </ul>
             </div>
         </div> --}}
-        <div class="erdles-head">
+        <div class="erdles-head" style="min-height: 100vh">
             <div class="container">
                 <div class="erdles-head__content">
                     <div class="row">

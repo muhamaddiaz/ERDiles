@@ -76,16 +76,17 @@
                                 </p>
                             </li>
                         </ul>
-                        <div class="display: flex; justify-content: space-between; width: 100%">
-                            <a href="{{route('materi.bagian1')}}" class="btn btn-outline-primary">Sebelumnya</a>
-                            <a href="{{route('materi.bagian3')}}" class="btn btn-outline-primary">Selanjutnya</a>
-                        </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 mt-3">
                         <h3>Video</h3>
                     </div>
                 </div>
+                <div style="display: flex; justify-content: space-between; width: 100%">
+                    <a href="{{route('materi.bagian1')}}" class="btn btn-outline-primary">Sebelumnya</a>
+                    <a href="{{route('materi.bagian3')}}" class="btn btn-outline-primary">Selanjutnya</a>
+                </div>
             </div>
         </div>
+        <br><br>
     </div>
 @endsection
