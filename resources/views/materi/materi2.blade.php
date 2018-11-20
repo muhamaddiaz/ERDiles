@@ -16,11 +16,11 @@
                     <div class="col-md-8">
                         <h3>Penjelasan</h3>
                         <hr>
-                        <h4>Apa itu key?</h4>
+                        <h4>Key</h4>
                         <ul>
                             <li>
                                 <p> 
-                                    uper key : Satu atau lebih atribut (kumpulan atribut) yang dapat membedakan setiap baris data dalam table secara unik.
+                                    Super key : Satu atau lebih atribut (kumpulan atribut) yang dapat membedakan setiap baris data dalam table secara unik.
                                     Contohnya : table customer memiliki atribut customer-id, customer-Name, customer-Street, customer-City <br>
                                     Maka super keynya :
                                     <ul>

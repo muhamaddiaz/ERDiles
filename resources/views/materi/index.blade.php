@@ -15,7 +15,9 @@
                 <div class="card">
                     <div class="card-body">
                         <div class="row">
-                            <div class="col-md-4"></div>
+                            <div class="col-md-4 text-center">
+                                <img src="{{asset('image/Unary.png')}}" class="mt-5" width="50%" alt="Unary image">
+                            </div>
                             <div class="col-md-8">
                                 <h3 class="card-title">Pengenalan ERD</h3>
                                 <p class="card-text">
@@ -32,7 +34,9 @@
                 <div class="card">
                     <div class="card-body">
                         <div class="row">
-                            <div class="col-md-4"></div>
+                            <div class="col-md-4">
+                                <img src="{{asset('image/key.png')}}" class="mt-5" style="width: 100%" alt="Binary image">
+                            </div>
                             <div class="col-md-8">
                                 <h3 class="card-title">Key</h3>
                                 <p class="card-text">
@@ -49,7 +53,9 @@
                 <div class="card mt-3">
                     <div class="card-body">
                         <div class="row">
-                            <div class="col-md-4"></div>
+                            <div class="col-md-4">
+                                <img src="{{asset('image/1to1.png')}}" class="mt-5" style="width: 100%" alt="Binary image">
+                            </div>
                             <div class="col-md-8">
                                 <h3 class="card-title">Kardinalitas, Modalitas & Agregasi</h3>
                                 <p class="card-text">
@@ -68,7 +74,9 @@
                 <div class="card mt-3">
                     <div class="card-body">
                         <div class="row">
-                            <div class="col-md-4"></div>
+                            <div class="col-md-4">
+                                <img src="{{asset('image/agregasi1.png')}}" class="mt-5" style="width: 100%" alt="Binary image">
+                            </div>
                             <div class="col-md-8">
                                 <h3 class="card-title">Generalisasi dan spesifikasi</h3>
                                 <p class="card-text mt-3">

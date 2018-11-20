@@ -25,16 +25,22 @@
                 </div>
             </div>
             <div class="col-md-8">
-                <div class="jumbotron home-quotes">
-                    <div class="container">
-                        <blockquote>
-                            <p>Quotes Block</p> 
-                            <footer>- Halim Chaniago</footer>
-                        </blockquote>
+                <h3>Bacaan terakhir</h3>
+                @if($materi)
+                    <div class="jumbotron home-quotes mt-3">
+                        <div class="container">
+                            <h1>{{$materi->judul}}</h1>
+                            <br>
+                            <a href="{{route('materi.'. $materi->link)}}" class="btn btn-outline-light">Lanjutkan membaca</a>
+                        </div>
                     </div>
-                </div>
+                @else 
+                    <br><br>
+                    <h4 style="color: grey">Anda belum membaca</h4>
+                    <br><br>
+                @endif
+                <h3>Forum terbaru</h3>
                 @if($forum->first())
-                    <h3>Forum terbaru</h3>
                     <br>
                     <div class="card-group">
                         @foreach($forum as $f)
@@ -46,6 +52,10 @@
                             </div>
                         @endforeach  
                     </div>
+                @else
+                    <br><br>
+                    <h4 style="color: grey">Forum terbaru tidak ditemukan</h4>
+                    <br><br>
                 @endif
             </div>
         </div>

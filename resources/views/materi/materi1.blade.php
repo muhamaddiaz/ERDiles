@@ -125,8 +125,8 @@
                         <iframe style="width: auto; height: auto" src="https://www.youtube.com/embed/OXvhfq1V84c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
-                <div class="display: flex; justify-content: space-between; width: 100%">
-                    <a href="{{route('materi.bagian2')}}" class="btn btn-outline-primary">Selanjutnya</a>
+                <div class="display: flex; justify-content: right; width: 100%">
+                    <a href="{{route('materi.bagian2')}}" style="float: right" class="btn btn-outline-primary">Selanjutnya</a>
                 </div>
             </div>
         </div>

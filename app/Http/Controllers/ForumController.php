@@ -10,6 +10,12 @@ use Illuminate\Http\Request;
 
 class ForumController extends Controller
 {
+    public function cari(Request $req) {
+        $cari = Forum::where('judul', 'like', $req->query('cari').'%')
+            ->orWhere('judul', 'like', '%'. $req->query('cari'))
+            ->orWhere('judul', 'like', '%'. $req->query('cari'). '%')->get();  
+        return view('forum.cari', ['cari' => $cari, 'query' => $req->query('cari')]);
+    }
     /**
      * Display a listing of the resource.
      *

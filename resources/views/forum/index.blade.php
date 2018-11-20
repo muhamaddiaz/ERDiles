@@ -17,6 +17,17 @@
                     <h2 style="color: grey">Belum ada forum</h2>
                     <br><br>
                 @else
+                    <form action="{{route('forum.cari')}}" method="GET">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input type="search" class="form-control" name="cari" placeholder="Cari forum" required>
+                                <div class="input-group-append">
+                                    <button type="submit" class="btn btn-outline-primary">Cari</button>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </form>
                     @foreach($forum as $f)
                         <div class="card">
                             <div class="card-body">

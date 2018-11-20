@@ -84,6 +84,33 @@
 
         <main>
             @yield('content')
+            <button title="Tombol bantuan" data-target="#bantuan" data-toggle="modal" class="btn btn-primary" style="position: fixed; right: 30px; bottom: 30px; width: 50px; height: 50px; border-radius: 50%; padding: 0;">
+                <b>?</b>
+            </button>
+
+            <div id="bantuan" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3 class="primary-color card-title mb-0 mt-3">Pusat bantuan</h3>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <h4 class="primary-color">Menu beranda</h4>
+                            <p>Digunakan untuk menampilkan halaman utama yang berisi bacaan terakhir pengguna, info singkat pengguna, menu perbarui akun pengguna, dan diskusi forum paling baru</p>
+                            <hr>
+                            <h4 class="primary-color">Menu materi</h4>
+                            <p>Digunakan untuk memilih materi yang akan anda pelajari dan didalam web ini ada 4 buah materi yang anda bisa pelajari</p>
+                            <hr>
+                            <h4 class="primary-color">Menu forum</h4>
+                            <p>Digunakan untuk membuat forum baru dan juga berdiskusi antar user didalam forum yang telah dibuat, didalamnya ada fitur pencarian dan juga user yang membuat forum dapat memperbarui forum yang telah dibuatnya</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </main>
     </div>
 </body>

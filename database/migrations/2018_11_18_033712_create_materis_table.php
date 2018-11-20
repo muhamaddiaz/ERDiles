@@ -16,8 +16,7 @@ class CreateMaterisTable extends Migration
         Schema::create('materis', function (Blueprint $table) {
             $table->increments('id');
             $table->string('judul');
-            $table->text('deskripsi');
-            $table->string('video');
+            $table->string('link');
             $table->timestamps();
         });
     }

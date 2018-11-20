@@ -31,5 +31,9 @@ class User extends Authenticatable
     public function forums() {
         return $this->hasMany(Forum::class);
     }
+
+    public function terakhir() {
+        return $this->hasOne(Materi::class);
+    }
     
 }
