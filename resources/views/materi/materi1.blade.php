@@ -3,7 +3,7 @@
 @section('title', 'Materi 1')
 
 @section('content')
-    <div class="jumbotron home-quotes">
+    <div class="jumbotron home-quotes mt-5">
         <div class="container">
             <h1>Materi 1</h1>
             <p>Pengertian ERD</p>
@@ -17,8 +17,8 @@
                         <h3>Penjelasan</h3>
                         <hr>
                         <p>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ERD adalah permodelan data berdasarkan persepsi pada dunia nyata yang terdiri dari objek yang disebut entitas, dan hubungan antar entitas yang biasa disebut relasi. Contohnya seperti ini : mahasiswa, dosen, mata kuliah merupakan entitas dari lingkungan kampus, hubungan diantara ketiganya merupakan relasi. <br><br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Entitas di deskripsiikan pada sebuah database dengan kumpulan antribut, misalnya seperti NIM, nama, alamat, dll. Dari atribut diatas dapat kita simpulkan bahwa atribut diatas merupkan atribut milik entitas mahasiswa.
+                            ERD adalah permodelan data berdasarkan persepsi pada dunia nyata yang terdiri dari objek yang disebut entitas, dan hubungan antar entitas yang biasa disebut relasi. Contohnya seperti ini : mahasiswa, dosen, mata kuliah merupakan entitas dari lingkungan kampus, hubungan diantara ketiganya merupakan relasi. <br><br>
+                            Entitas di deskripsiikan pada sebuah database dengan kumpulan antribut, misalnya seperti NIM, nama, alamat, dll. Dari atribut diatas dapat kita simpulkan bahwa atribut diatas merupkan atribut milik entitas mahasiswa.
                         </p>
                         <h4>Komponen dari ERD</h4>
                         <ul>

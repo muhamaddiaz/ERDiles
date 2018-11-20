@@ -3,7 +3,7 @@
 @section('title', 'Materi 2')
 
 @section('content')
-    <div class="jumbotron home-quotes">
+    <div class="jumbotron home-quotes mt-5">
         <div class="container">
             <h1>Materi 2</h1>
             <p>Key</p>
@@ -79,6 +79,8 @@
                     </div>
                     <div class="col-md-4 mt-3">
                         <h3>Video</h3>
+                        <br>
+                        <h4 class="text-secondary">Video tidak tersedia</h4>
                     </div>
                 </div>
                 <div style="display: flex; justify-content: space-between; width: 100%">

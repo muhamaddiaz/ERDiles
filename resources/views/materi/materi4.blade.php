@@ -3,7 +3,7 @@
 @section('title', 'Materi 4')
 
 @section('content')
-    <div class="jumbotron home-quotes">
+    <div class="jumbotron home-quotes mt-5">
         <div class="container">
             <h1>Materi 4</h1>
             <p>Generalisasi dan spesifikasi</p>
@@ -35,6 +35,8 @@
                     
                     <div class="col-md-4 mt-3">
                         <h3>Video</h3>
+                        <br>
+                        <iframe src="https://www.youtube.com/embed/6SSdpSC3UAQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
                 <div style="display: flex; justify-content: space-between; width: 100%">

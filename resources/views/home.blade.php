@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="jumbotron home-beranda">
+    <div class="jumbotron home-beranda mt-5">
         <div class="container">
             <h1>Selamat Datang di ERDLes</h1>
             <p><i>Entity Relationship Diagram Lesson</i></p>

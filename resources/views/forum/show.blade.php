@@ -3,7 +3,7 @@
 @section('title', 'Forum diskusi: '. $forum->judul)
 
 @section('content')
-    <div class="jumbotron home-quotes">
+    <div class="jumbotron home-quotes mt-5">
         <div class="container">
             <h1>Forum Diskusi</h1>
             <p>Dibuat oleh: {{$user->name}}</p>
@@ -16,6 +16,7 @@
                 <div class="card">
                     <div class="card-body">
                         <h2>{{$forum->judul}}</h2>
+                            <p class="text-secondary">Dibuat pada: {{$forum->created_at}}</p>
                     </div>
                 </div>
                 <div class="card mt-3">

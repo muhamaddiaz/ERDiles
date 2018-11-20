@@ -18,27 +18,13 @@
                 </ul>
             </div>
         </div> --}}
-        <div class="erdles-head" style="min-height: 100vh">
-            <div class="container">
-                <div class="erdles-head__content">
-                    <div class="row">
-                        <div class="col-md-6 pt-5">
-                            <div class="erdles-head__content--text pt-5">
-                                <h1 class="pt-5">ERDLes.</h1>
-                                <h3>Belajar <i>Entity Relational Diagram</i> dengan mudah bersama ERDles web.</h3>
-                                <br>
-                                <button class="btn btn-pink">Pelajari lebih lanjut</button>
-                            </div>
-                        </div>
-                        <div class="col-md-6 pt-5">
-                            <div class="erdles-head__content--image text-center pt-5">
-                                <img src="{{asset('svg/function.svg')}}" 
-                                    style="width: 50%; height: 50%" 
-                                    alt="ERDles image"
-                                    class="pt-5">
-                            </div>
-                        </div>
-                    </div>
+        <div class="erdles-head" style="background-image: url({{asset('image/work.jpg')}}); background-size: 100% 100%">
+            <div class="erdles-head__content">
+                <div class="erdles-head__content--text">
+                    <h1>ERDLes.</h1>
+                    <h3>Belajar <i>Entity Relational Diagram</i> dengan mudah bersama ERDles web.</h3>
+                    <br>
+                    <button class="btn btn-outline-light btn-lg">Pelajari lebih lanjut</button>
                 </div>
             </div>
         </div>
@@ -133,7 +119,7 @@
                         <br><br>
                         <h3>Di desain dan dibuat dengan cinta oleh:</h3>
                         <br>
-                        <h3 class="kelompok">Kelompok 5</h3>
+                        <h3 class="kelompok">Kelompok 2</h3>
                     </div>
                 </div>
             </div>
@@ -194,7 +180,7 @@
             </div>
         </div>
         <footer class="penutup mt-5">
-            <p>Kelompok 5 IMK &copy; 2018</p>
+            <p>Kelompok 2 IMK &copy; 2018</p>
         </footer>
 
 @endsection

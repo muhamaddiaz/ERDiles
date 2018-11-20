@@ -3,7 +3,7 @@
 @section('title', 'Forum')
 
 @section('content')
-    <div class="jumbotron home-quotes">
+    <div class="jumbotron home-quotes mt-5">
         <div class="container">
             <h1>Forum</h1>
             <p>Forum diskusi ERDLes</p>
