@@ -37,4 +37,8 @@ class HomeController extends Controller
             'materi' => $materi
         ]);
     }
+
+    public function staticpages() {
+        return view('staticpages.index');;
+    }
 }

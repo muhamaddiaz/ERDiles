@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('staticpages.index');
-})->middleware('guest');
+Route::get('/', 'HomeController@staticpages')->middleware('guest');
 
 Auth::routes();
 
