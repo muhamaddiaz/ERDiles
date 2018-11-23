@@ -26,4 +26,7 @@ Route::middleware('auth')->group(function() {
     Route::resource('/materi', 'MateriController');
     Route::resource('/user', 'UserController');
     Route::get('/home', 'HomeController@index')->name('home');
+    Route::get('/soal', function() {
+        return response()->json('soal');
+    });
 });
