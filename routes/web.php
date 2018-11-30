@@ -16,6 +16,7 @@ Route::get('/', 'StaticPagesController@staticpages')->middleware('guest');
 Auth::routes();
 
 Route::middleware('auth')->group(function() {
+    Route::get('/home', 'HomeController@index')->name('home');
     Route::get('/forum/pencarian', 'ForumController@cari')->name('forum.cari');
     Route::get('/materi/bagian1', 'MateriController@materi1')->name('materi.bagian1');
     Route::get('/materi/bagian2', 'MateriController@materi2')->name('materi.bagian2');
@@ -25,8 +26,5 @@ Route::middleware('auth')->group(function() {
     Route::resource('/forum', 'ForumController');
     Route::resource('/materi', 'MateriController');
     Route::resource('/user', 'UserController');
-    Route::get('/home', 'HomeController@index')->name('home');
-    Route::get('/soal', function() {
-        return response()->json('soal');
-    });
+    
 });

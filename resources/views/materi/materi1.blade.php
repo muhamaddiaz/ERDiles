@@ -129,6 +129,10 @@
                         <h3>Video</h3>
                         <br>
                         <iframe style="width: auto; height: auto" src="https://www.youtube.com/embed/OXvhfq1V84c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <br>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#soal">
+                            <i class="far fa-edit"></i> Latihan soal
+                        </button>
                     </div>
                 </div>
                 <div class="display: flex; justify-content: right; width: 100%">
@@ -138,4 +142,90 @@
         </div>
         <br><br>
     </div>
+
+    <div id="soal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="primary-color card-title mb-0 mt-3">Latihan soal</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="soal mb-4" id="s1">
+                       <p>1. Kampus memiliki seorang Dosen, di  dalam ERD Dosen termasuk komponen apa?</p>
+                        <div class="row">
+                            <div class="col-md-6"><label for="j1"><input type="radio" name="j1" value="a" id="j1"> A. Atribut</label> </div>
+                            <div class="col-md-6"><label for="j1"><input type="radio" name="j1" value="b" id="j1"> B. Entitas</label> </div>
+                            <div class="col-md-6"><label for="j1"><input type="radio" name="j1" value="c" id="j1"> C. Key</label> </div>
+                            <div class="col-md-6"><label for="j1"><input type="radio" name="j1" value="d" id="j1"> D. Relasi</label> </div>
+                        </div> 
+                    </div>
+                    
+                    <div class="soal mb-4" id="s2">
+                        <p>2. Terdapat entitas motor dengan entitas bensin. Jika entitas bensin dihapus maka entitas motor pun akan ikut terhapus. Maka ini termasuk pada bagian ?</p>
+                        <div class="row">
+                            <div class="col-md-6"><label for="j2"><input type="radio" name="j2" value="a" id="j2"> A. Entitas kuat</label> </div>
+                            <div class="col-md-6"><label for="j2"><input type="radio" name="j2" value="b" id="j2"> B. Entitas Asosiatif</label> </div>
+                            <div class="col-md-6"><label for="j2"><input type="radio" name="j2" value="c" id="j2"> C. Entitas lemah</label> </div>
+                            <div class="col-md-6"><label for="j2"><input type="radio" name="j2" value="d" id="j2"> D. Simple atribut</label> </div>
+                        </div> 
+                    </div>
+
+                    <div class="soal mb-4" id="s3">
+                        <p>3. Berikut ini yang termasuk pada Atribut Composite adalah ?</p>
+                        <div class="row">
+                            <div class="col-md-6"><label for="j3"><input type="radio" name="j3" value="a" id="j3"> A. NIM</label> </div>
+                            <div class="col-md-6"><label for="j3"><input type="radio" name="j3" value="b" id="j3"> B. Nomer telepon</label> </div>
+                            <div class="col-md-6"><label for="j3"><input type="radio" name="j3" value="c" id="j3"> C. Alamat</label> </div>
+                            <div class="col-md-6"><label for="j3"><input type="radio" name="j3" value="d" id="j3"> D. Jenis kelamin</label> </div>
+                        </div> 
+                    </div>
+
+                    <div class="soal mb-4" id="s4">
+                        <p>4. Pengertian relasi unary adalah ?</p>
+                        <div class="row">
+                            <div class="col-md-6"><label for="j4"><input type="radio" name="j4" value="a" id="j4"> A. Satu buah relasi yang menghubungkan satu buah entitas</label> </div>
+                            <div class="col-md-6"><label for="j4"><input type="radio" name="j4" value="b" id="j4"> B. Satu buah relasi menghubungkan tiga buah entitas</label> </div>
+                            <div class="col-md-6"><label for="j4"><input type="radio" name="j4" value="c" id="j4"> C. Satu buah relasi menghubungkan dua buah entitas</label> </div>
+                            <div class="col-md-6"><label for="j4"><input type="radio" name="j4" value="d" id="j4"> D. Satu buah relasi menghubungkan empat buah entitas</label> </div>
+                        </div> 
+                    </div>
+
+                    <div class="soal mb-4" id="s5">
+                        <img src="{{asset('image/Ternary.png')}}" style="width: 100%" alt="Binary image"><br><br>
+                        <p>5. Dari gambar diatas dapat disimpulkan ERD ini memiliki derajat relasi ?</p>
+                        <div class="row">
+                            <div class="col-md-6"><label for="j5"><input type="radio" name="j5" value="a" id="j5"> A. Unary</label> </div>
+                            <div class="col-md-6"><label for="j5"><input type="radio" name="j5" value="b" id="j5"> B. Binary</label> </div>
+                            <div class="col-md-6"><label for="j5"><input type="radio" name="j5" value="c" id="j5"> C. Ternary</label> </div>
+                            <div class="col-md-6"><label for="j5"><input type="radio" name="j5" value="d" id="j5"> D. Quadnary</label> </div>
+                        </div> 
+                    </div>
+                    <br>
+                    <button class="btn btn-success" onclick="kirim()">Kirim jawaban</button>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function kirim() {
+            let kunjaw = ['b', 'c', 'c', 'a', 'c'];
+            let benar = $('<label class="text-success"></label>').text('benar');
+            let salah = $('<label class="text-danger"></label>').text('salah');
+            kunjaw.map((v, i) => {
+                let index = i + 1;
+                let j = $('input[name="j'+ index +'"]:checked').val();
+                let soal = $('#s' + index);
+                if(v === j) {
+                    soal.append(benar);
+                } else {
+                    soal.append(salah);
+                }
+                
+            });
+        }
+    </script>
 @endsection

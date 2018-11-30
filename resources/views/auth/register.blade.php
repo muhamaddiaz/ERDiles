@@ -13,7 +13,7 @@
                             @csrf
     
                             <div class="form-group">
-                                <label for="name" class="">{{ __('Name') }}</label>
+                                <label for="name" class="">{{ __('Nama') }}</label>
     
                                 <div>
                                     <input id="name" type="text" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" name="name" value="{{ old('name') }}" required autofocus>
@@ -27,7 +27,7 @@
                             </div>
     
                             <div class="form-group">
-                                <label for="email">{{ __('E-Mail Address') }}</label>
+                                <label for="email">{{ __('Alamat E-Mail') }}</label>
     
                                 <div>
                                     <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required>
@@ -41,7 +41,7 @@
                             </div>
     
                             <div class="form-group">
-                                <label for="password">{{ __('Password') }}</label>
+                                <label for="password">{{ __('Kata sandi') }}</label>
     
                                 <div>
                                     <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
@@ -55,7 +55,7 @@
                             </div>
     
                             <div class="form-group">
-                                <label for="password-confirm">{{ __('Confirm Password') }}</label>
+                                <label for="password-confirm">{{ __('Konfirmasi kata sandi') }}</label>
     
                                 <div>
                                     <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
@@ -65,7 +65,7 @@
                             <div class="form-group mb-0">
                                 <div>
                                     <button type="submit" class="btn btn-primary">
-                                        {{ __('Register') }}
+                                        {{ __('Daftar') }}
                                     </button>
                                 </div>
                             </div>

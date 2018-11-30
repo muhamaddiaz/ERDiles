@@ -92,6 +92,9 @@
                         <h3>Video</h3>
                         <br>
                         <iframe src="https://www.youtube.com/embed/jMwfGILwf70" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#soal">
+                            <i class="far fa-edit"></i> Latihan soal
+                        </button>
                     </div>
                 </div>
                 <div style="display: flex; justify-content: space-between; width: 100%">
@@ -102,4 +105,67 @@
         </div>
         <br><br>
     </div>
+    <div id="soal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="primary-color card-title mb-0 mt-3">Latihan soal</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="soal mb-4" id="s1">
+                        <p>1. Terdapat entitas WargaNegara dengan entitas NIK yang memiliki relasi “Memiliki”. Maka ini termasuk kedalam kardinalitas?</p>
+                        <div class="row">
+                            <div class="col-md-6"><label for="j1"><input type="radio" name="j1" value="a" id="j1"> A. Many to Many</label> </div>
+                            <div class="col-md-6"><label for="j1"><input type="radio" name="j1" value="b" id="j1"> B. One to Many</label> </div>
+                            <div class="col-md-6"><label for="j1"><input type="radio" name="j1" value="c" id="j1"> C. One to One</label> </div>
+                            <div class="col-md-6"><label for="j1"><input type="radio" name="j1" value="d" id="j1"> D. 1..N</label> </div>
+                        </div> 
+                    </div>
+
+                    <div class="soal mb-4" id="s2">
+                        <p>2. Kardinalitas many to many adalah ?</p>
+                        <div class="row">
+                            <div class="col-md-6"><label for="j2"><input type="radio" name="j2" value="a" id="j2"> A. Beberapa entitas dapat berhubungan dengan entitas lainnya</label> </div>
+                            <div class="col-md-6"><label for="j2"><input type="radio" name="j2" value="b" id="j2"> B. Satu entitas dapat berhubungan dengan entitas lainnya</label> </div>
+                            <div class="col-md-6"><label for="j2"><input type="radio" name="j2" value="c" id="j2"> C. Setiap entitas hanya dapat berelasi ke satu entitas saja</label> </div>
+                            <div class="col-md-6"><label for="j2"><input type="radio" name="j2" value="d" id="j2"> D. Satu buah relasi menghubungkan 2 buah entitas</label> </div>
+                        </div> 
+                    </div>
+
+                    <div class="soal mb-4" id="s3">
+                        <p>2. Jika modalitas bersifat 1, maka partisipasi bersifat?</p>
+                        <div class="row">
+                            <div class="col-md-6"><label for="j3"><input type="radio" name="j3" value="a" id="j3"> A. Sunnah</label> </div>
+                            <div class="col-md-6"><label for="j3"><input type="radio" name="j3" value="b" id="j3"> B. Opsional</label> </div>
+                            <div class="col-md-6"><label for="j3"><input type="radio" name="j3" value="c" id="j3"> C. Wajib</label> </div>
+                            <div class="col-md-6"><label for="j3"><input type="radio" name="j3" value="d" id="j3"> D. Parsial</label> </div>
+                        </div> 
+                    </div>
+                    <br>
+                    <button class="btn btn-success" onclick="kirim()">Kirim jawaban</button>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function kirim() {
+            let kunjaw = ['c', 'a', 'c'];
+            let benar = $('<p class="text-success"></p>').text('benar');
+            let salah = $('<p class="text-danger"></p>').text('salah');
+            kunjaw.map((v, i) => {
+                let index = i + 1;
+                let j = $('input[name="j'+ index +'"]:checked').val();
+                let soal = $('#s' + index);
+                if(v === j) {
+                    soal.append(benar);
+                } else {
+                    soal.append(salah);
+                } 
+            });
+        }
+    </script>
 @endsection
